@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Iframe Magic</title>
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>Inline Frame Magic</h1>
+		<P>1.</p>
+			<iframe src="https://www.youtube.com/embed/Zj3nUbLpqn4" width="560" height="315" frameborder="30" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>Youtube Video<wbr><a href="https://www.youtube.com/results?search_query=iframe+html+security" target="blank">iframe security</a>
+			</iframe><br>
+		
+		<p>2.</p>
+			<object><iframe width="560" height="315" src="https://www.youtube.com/embed/1frtEY5vDyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+				<param name="autostart" value="false">
+				<param name="controller" value="true">
+				
+			</object><br>
+							
+		<p>3.</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32575489.918426786!2d-10.043246124999987!3d4.6827703639614064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1594332647208!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<br>
+
+				<h5>Samples of Web Video</h5>
+				
+		<video src="Blacklist1.mp4" width="400" height="300"
+				poster="logo.jpg" controls autoplay id="Blacklist1" loop="ad infinitum" preload="auto">
+				Your browser does not support HTML5 video. Get the <a href="Blacklist1.mp4">MP4 video</a>
+		</video>
+
+		<video src="Blacklist2.mp4" width="400" height="300"
+				poster="logo.jpg" controls autoplay id="Blacklist2" loop="ad infinitum" preload="none" muted>
+				Your browser does not support HTML5 video. Get the <a href="Blacklist2.mp4">MP4 video</a>
+		</video>
+
+		<video src="Blacklist3.mp4" width="400" height="265"
+				poster="logo.jpg" controls autoplay id="Blacklist3" loop="ad infinitum" preload="none">
+				Your browser does not support HTML5 video. Get the <a href="Blacklist3.mp4">MP4 video</a>
+		</video>
+		
+	<!-- below is sample of multiple API(such as .mp4 .webm .ogg .m4v) -->
+	
+		<video id="videoplayback" controls poster="images/fish.jpg" width="300" height="250">
+				<source src="videoplayback.webm" type="video/webm">
+				<source src="videoplayback.mp4" type="video/mp4">
+				<source src="videoplayback.ogg" type="video/ogg">
+				<a href="videoplayback.mp4">Download the MP4 of the clip.</a>
+		</video>;
+
+	<div class="banner">
+		<video autoplay muted loop poster="logo.jpg" controls>
+			<source src="Blacklist3.mp4" type="video/mp4">
+		</video>
+		
+		<h2>Video</h2>
+		
+	</div>
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
